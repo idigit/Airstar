@@ -1,0 +1,103 @@
+html {
+  height: 100%;
+  width: 100%;
+  line-height: 1.5;
+}
+
+html, body, button, input {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: url(background2.jpg) no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  .social {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    a {
+      color: #a5a09f;
+      margin-left: 10px;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 180px;
+    padding: 0 20px;
+    h1 {
+      font-family: 'Raleway', sans-serif;
+      color: #fff;
+      font-weight: 600;
+      font-size: em(42);
+      font-style: uppercase;
+    }
+    p {
+      font-size: em(32);
+      font-weight: 200;
+      color: #a5a09f;
+      padding-bottom: 14px;
+    }
+    .email {
+      padding: 16px 20px;
+      background: #fff;
+      font-size: em(18);
+      font-weight: 200;
+      border: 0;
+      color: #333;
+      margin:0;
+      margin-right: 8px;
+      border-radius: 2px;
+      &:focus {
+        outline: 0;
+      }
+    }
+    .button {
+      padding: 16px 20px;
+      background: #9d7eb0;
+      color: #fff;
+      font-weight: 600;
+      font-size: em(18);
+      border: none;
+      margin:0;
+      border-radius: 2px;
+      &:hover {
+        background: #ac8cc0;
+      }
+      &:active {
+        background: #795e91;
+      }
+      &:focus {
+        outline:0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  
+  /* Styles for mobile */
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+  /* Styles for tablet */
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+
+  /* Don't forget your Retina CSS! */
+  
+  body {
+    
+  }
+
+}
