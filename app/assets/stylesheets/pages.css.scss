@@ -1,3 +1,6 @@
+.one {display: none;}
+.two {display: none;}
+
 html {
   height: 100%;
   width: 100%;
@@ -9,10 +12,175 @@ html, body, button, input {
   -webkit-font-smoothing: antialiased;
 }
 
+//// 
+// Layout one is below
+////
+
+// body {
+//   background: url(background2.jpg) no-repeat center center fixed;
+//   background-size: cover;
+//   width: 100%;
+//   .social {
+//     position: absolute;
+//     top: 20px;
+//     right: 24px;
+//     a {
+//       color: #a5a09f;
+//       margin-left: 10px;
+//       &:hover {
+//         color: #fff;
+//       }
+//     }
+//   }
+//   section {
+//     max-width: 800px;
+//     margin: 0 auto;
+//     text-align: center;
+//     margin-top: 180px;
+//     padding: 0 20px;
+//     h1 {
+//       font-family: 'Raleway', sans-serif;
+//       color: #fff;
+//       font-weight: 600;
+//       font-size: em(42);
+//     }
+//     p {
+//       font-size: em(32);
+//       font-weight: 200;
+//       color: #a5a09f;
+//       padding-bottom: 14px;
+//     }
+//     .email {
+//       padding: 16px 20px;
+//       background: #fff;
+//       font-size: em(18);
+//       font-weight: 200;
+//       border: 0;
+//       color: #333;
+//       margin:0;
+//       margin-right: 8px;
+//       border-radius: 2px;
+//       &:focus {
+//         outline: 0;
+//       }
+//     }
+//     .button {
+//       padding: 16px 20px;
+//       background: #9d7eb0;
+//       color: #fff;
+//       font-weight: 600;
+//       font-size: em(18);
+//       border: none;
+//       margin:0;
+//       border-radius: 2px;
+//       &:hover {
+//         background: #ac8cc0;
+//       }
+//       &:active {
+//         background: #795e91;
+//       }
+//       &:focus {
+//         outline:0;
+//       }
+//     }
+//   }
+// }
+
+
+//// 
+// Layout two is below
+////
+
+// body {
+//   @include linear-gradient(#559dd4, #3d8dcb);
+//   .header {
+//     h1 {
+//       position: absolute;
+//       color: #fff;
+//       font-weight: 700;
+//       font-size: em(24);
+//       text-transform: uppercase;
+//       top: 20px;
+//       left: 24px;
+//     }
+//   .social {
+//     position: absolute;
+//     top: 20px;
+//     right: 24px;
+//     a {
+//       color: #fff;
+//       margin-left: 10px;
+//       &:hover {
+//         color: #fff;
+//       }
+//     }
+//   }
+// }
+//   section {
+//     max-width: 800px;
+//     margin: 0 auto;
+//     text-align: center;
+//     margin-top: 280px;
+//     padding: 0 20px;
+//     img {
+//       width: 366px;
+//     }
+//     p {
+//       line-height: 1;
+//       margin: 44px;
+//       font-size: em(56);
+//       font-weight: 200;
+//       color: #fff;
+//       padding-bottom: 14px;
+//     }
+//     .email {
+//       padding: 16px 20px;
+//       background: #fff;
+//       font-size: em(18);
+//       font-weight: 200;
+//       border: 0;
+//       color: #333;
+//       margin:0;
+//       margin-right: 8px;
+//       border-radius: 2px;
+//       &:focus {
+//         outline: 0;
+//       }
+//     }
+//     .button {
+//       padding: 14px 18px;
+//       border: 2px solid #fff;
+//       color: #fff;
+//       font-weight: 600;
+//       font-size: em(18);
+//       background: none;
+//       margin:0;
+//       border-radius: 2px;
+//       &:hover {
+//         background: #fff;
+//         color: #4693cf;
+//       }
+//       &:active {
+//         background: #dcf0ff;
+//         color: #4693cf;
+//       }
+//       &:focus {
+//         outline:0;
+//       }
+//     }
+//   }
+// }
+
+
+//// 
+// Layout three is below
+////
+
 body {
-  background: url(background2.jpg) no-repeat center center fixed;
+  background: url(background3.jpg) no-repeat center center fixed;
   background-size: cover;
   width: 100%;
+  font-family: 'EB Garamond', serif;
   .social {
     position: absolute;
     top: 20px;
@@ -32,16 +200,29 @@ body {
     margin-top: 180px;
     padding: 0 20px;
     h1 {
-      font-family: 'Raleway', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       color: #fff;
       font-weight: 600;
-      font-size: em(42);
-      font-style: uppercase;
+      font-size: em(52);
+      text-transform: uppercase;
+      margin-bottom: 26px;
+      span {
+        font-size: em(12);
+        text-transform: lowercase;
+        display: block;
+        font-family: 'IM Fell English', serif;
+        font-style: italic;
+        color: #cccccc;
+        line-height: .5;
+      }
+    }
+    hr {
+      width: 80px;
     }
     p {
-      font-size: em(32);
+      font-size: em(30);
       font-weight: 200;
-      color: #a5a09f;
+      color: #fff;
       padding-bottom: 14px;
     }
     .email {
@@ -59,19 +240,21 @@ body {
       }
     }
     .button {
-      padding: 16px 20px;
-      background: #9d7eb0;
+      padding: 14px 18px;
+      background: none;
       color: #fff;
       font-weight: 600;
       font-size: em(18);
-      border: none;
+      border: 2px solid #984243;
       margin:0;
       border-radius: 2px;
       &:hover {
-        background: #ac8cc0;
+        background: #984243;
+        color: #fff;
       }
       &:active {
-        background: #795e91;
+        background: #833738;
+        color: #fff;
       }
       &:focus {
         outline:0;
@@ -79,6 +262,21 @@ body {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   
